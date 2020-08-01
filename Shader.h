@@ -1,14 +1,17 @@
-#ifndef MAGE_SHADERS_H
-#define MAGE_SHADERS_H
+#ifndef MAGE_SHADER_H
+#define MAGE_SHADER_H
 
 namespace MAGE {
     class Shader {
     public:
         unsigned int ID;
+
         Shader();
+
         bool AddComponent(unsigned int type, char *source);
-        void Compile();
+
+        void SetActive();
     };
 }
 
-#endif //MAGE_SHADERS_H
+#endif //MAGE_SHADER_H

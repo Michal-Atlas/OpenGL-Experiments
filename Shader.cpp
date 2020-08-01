@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Shaders.h"
+#include "Shader.h"
 #include "GL/glew.h"
 
 namespace MAGE {
@@ -21,10 +21,12 @@ namespace MAGE {
         glAttachShader(ID, shaderId);
         glDeleteShader(shaderId);
     }
-    void Shader::Compile() {
+
+    void Shader::SetActive() {
         glLinkProgram(ID);
         glUseProgram(ID);
     }
+
     Shader::Shader() {
         ID = glCreateProgram();
     }
