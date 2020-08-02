@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Shader.h"
-#include "GL/glew.h"
+#include <GL/glew.h>
 
 namespace MAGE {
     bool Shader::AddComponent(unsigned int type, char *source) {
@@ -22,9 +22,8 @@ namespace MAGE {
         glDeleteShader(shaderId);
     }
 
-    void Shader::SetActive() {
+    void Shader::Compile() {
         glLinkProgram(ID);
-        glUseProgram(ID);
     }
 
     Shader::Shader() {

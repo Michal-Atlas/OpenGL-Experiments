@@ -3,4 +3,4 @@ project(MAGE)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_library(MAGE Shader.cpp Object.cpp)
+add_library(MAGE Shader.cpp Object.cpp Collision.cpp Collision.h Texture.h)

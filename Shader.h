@@ -10,7 +10,7 @@ namespace MAGE {
 
         bool AddComponent(unsigned int type, char *source);
 
-        void SetActive();
+        void Compile();
     };
 }
 
