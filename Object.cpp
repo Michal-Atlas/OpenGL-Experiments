@@ -61,7 +61,7 @@ namespace MAGE {
 
         glm::mat4 scale = glm::scale(glm::mat4(1.0f), Scale);
 
-        glm::mat4 view = glm::perspective(glm::radians(45.0f), 16.0f/9.0f, 0.1f, 100.0f);
+        //glm::mat4 view = glm::perspective(glm::radians(45.0f), 16.0f/9.0f, 0.1f, 100.0f);
 
         return translation * rotationX * rotationY * rotationZ * scale;// * view;
     };
