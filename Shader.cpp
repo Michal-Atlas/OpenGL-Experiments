@@ -20,6 +20,7 @@ namespace MAGE {
         };
         glAttachShader(ID, shaderId);
         glDeleteShader(shaderId);
+        return 0;
     }
 
     void Shader::Compile() {
